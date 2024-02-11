@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="seeScheduleVM" type="com.aartipotnurusapplication.app.modules.seeschedule.data.viewmodel.SeeScheduleVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearSeeSchedule"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylebluegray_300_ec">
+        <LinearLayout android:gravity="center_vertical"
+            android:id="@+id/linearRowprocrasticat"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_3pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylegray_50">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtProcrastiCat"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_7pxv"
+                android:layout_marginStart="@dimen/_116pxh"
+                android:layout_marginTop="@dimen/_44pxv"
+                android:layout_weight="0.64" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{seeScheduleVM.seeScheduleModel.txtProcrastiCat}"
+                style="@style/txt" tools:text="@string/lbl_procrasticat"/>
+            <ImageView android:id="@+id/imageImageTwo"
+                android:layout_height="@dimen/_30pxh"
+                android:layout_marginBottom="@dimen/_15pxv"
+                android:layout_marginEnd="@dimen/_100pxh"
+                android:layout_marginStart="@dimen/_2pxh"
+                android:layout_marginTop="@dimen/_44pxv"
+                android:layout_width="@dimen/_68pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_image1"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image1"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnSeeSchedule"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_50pxv"
+            android:layout_marginEnd="@dimen/_40pxh"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_marginTop="@dimen/_54pxv"
+            android:layout_width="@dimen/_287pxh"
+            android:paddingBottom="@dimen/_5pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_5pxv" android:singleLine="true"
+            android:text="@string/lbl_see_schedule"
+            android:textAllCaps="false" style="@style/btnSolid" tools:text="@string/lbl_see_schedule"/>
+        <View android:background="@color/white_A700"
+            android:id="@+id/viewCalender"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_510pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_40pxh"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_marginTop="@dimen/_66pxv" android:layout_width="@dimen/_330pxh"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">aarti_potnuru_s_application</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_study_time">Study Time</string>
+  <string name="lbl_15_minutes">15 minutes</string>
+  <string name="lbl_45_minutes">45 minutes</string>
+  <string name="lbl_60_minutes">60 minutes</string>
+  <string name="lbl_0">0</string>
+  <string name="lbl_see_schedule">See Schedule</string>
+  <string name="lbl_dress_my_cat">Dress my Cat!</string>
+  <string name="lbl_30_minutes">30 minutes</string>
+  <string name="lbl_breaks">Breaks</string>
+  <string name="lbl_5_minutes">5 minutes</string>
+  <string name="lbl_procrasticat">ProcrastiCat</string>
+  <string name="lbl_20_minutes">20 minutes</string>
+  <string name="lbl_10_minutes">10 minutes</string>
+  <string name="msg_hi_my_name_is">Hi, my name is Lilac!!!</string>
+  <string name="lbl_timer">Timer</string>
+</resources>

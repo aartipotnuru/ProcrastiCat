@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.aartipotnurusapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.aartipotnurusapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.aartipotnurusapplication.app.modules.seeschedule.ui.SeeScheduleActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.aartipotnurusapplication.app.modules.breakfifteen.ui.BreakFifteenActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.aartipotnurusapplication.app.modules.homepage.ui.HomepageActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aartipotnurusapplication.app.modules.timeoptions.ui.TimeOptionsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.aartipotnurusapplication.app.modules.timefortyfive.ui.TimeFortyfiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.aartipotnurusapplication.app.modules.breakten.ui.BreakTenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.aartipotnurusapplication.app.modules.breaktwenty.ui.BreakTwentyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.aartipotnurusapplication.app.modules.breakoptions.ui.BreakOptionsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.aartipotnurusapplication.app.modules.timetwenty.ui.TimeTwentyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.aartipotnurusapplication.app.modules.breakfive.ui.BreakFiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.aartipotnurusapplication.app.modules.timesixty.ui.TimeSixtyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.aartipotnurusapplication.app.modules.timethirty.ui.TimeThirtyActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

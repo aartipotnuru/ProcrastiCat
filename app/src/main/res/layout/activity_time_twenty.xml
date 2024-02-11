@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="timeTwentyVM" type="com.aartipotnurusapplication.app.modules.timetwenty.data.viewmodel.TimeTwentyVM"/>
+    </data>
+    <LinearLayout android:gravity="end"
+        android:id="@+id/linearTimeTwenty"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylebluegray_300_ec">
+        <LinearLayout android:gravity="center_vertical"
+            android:id="@+id/linearRowprocrasticat"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylegray_50">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtProcrastiCat"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginStart="@dimen/_116pxh"
+                android:layout_marginTop="@dimen/_43pxv"
+                android:layout_weight="0.64" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{timeTwentyVM.timeTwentyModel.txtProcrastiCat}"
+                style="@style/txt" tools:text="@string/lbl_procrasticat"/>
+            <ImageView android:id="@+id/imageImageThree"
+                android:layout_height="@dimen/_30pxh"
+                android:layout_marginBottom="@dimen/_17pxv"
+                android:layout_marginEnd="@dimen/_103pxh"
+                android:layout_marginStart="@dimen/_2pxh"
+                android:layout_marginTop="@dimen/_43pxv"
+                android:layout_width="@dimen/_68pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_image1"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image1"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/frameStack"
+            android:layout_height="@dimen/_381pxv"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_28pxv" android:layout_width="@dimen/_381pxh">
+            <ImageView android:id="@+id/imageImageTwo"
+                android:layout_gravity="top|end"
+                android:layout_height="@dimen/_291pxh"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="@dimen/_220pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_image2}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image2"/>
+            <ImageView android:id="@+id/imageImageThreeOne"
+                android:layout_gravity="bottom|start"
+                android:layout_height="@dimen/_337pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="@dimen/_337pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_image3}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image3"/>
+        </FrameLayout>
+        <View android:background="@color/white_A700"
+            android:id="@+id/viewTimerTwenty"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_130pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_40pxv" android:layout_width="@dimen/_271pxh"/>
+    </LinearLayout>
+</layout>

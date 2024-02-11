@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homepageVM" type="com.aartipotnurusapplication.app.modules.homepage.data.viewmodel.HomepageVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearHomepage"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylebluegray_300_ec">
+        <LinearLayout android:gravity="center_vertical"
+            android:id="@+id/linearRowprocrasticat"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_1pxh"
+            android:layout_marginStart="@dimen/_2pxh"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylegray_50">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtProcrastiCat"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_7pxv"
+                android:layout_marginStart="@dimen/_116pxh"
+                android:layout_marginTop="@dimen/_44pxv"
+                android:layout_weight="0.64" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{homepageVM.homepageModel.txtProcrastiCat}"
+                style="@style/txt" tools:text="@string/lbl_procrasticat"/>
+            <ImageView android:id="@+id/imageImageOne"
+                android:layout_height="@dimen/_30pxh"
+                android:layout_marginBottom="@dimen/_15pxv"
+                android:layout_marginEnd="@dimen/_100pxh"
+                android:layout_marginStart="@dimen/_2pxh"
+                android:layout_marginTop="@dimen/_44pxv"
+                android:layout_width="@dimen/_68pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_image1"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="end"
+            android:id="@+id/linearRowzero"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal" style="@style/groupStylegray_100">
+            <TextView android:ellipsize="end" android:id="@+id/txtZero"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_marginStart="@dimen/_22pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_weight="0.29" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{homepageVM.homepageModel.txtZero}"
+                style="@style/txtKalamregular16" tools:text="@string/lbl_0"/>
+            <ImageView android:id="@+id/imagePngimgOne"
+                android:layout_height="@dimen/_21pxh"
+                android:layout_marginBottom="@dimen/_4pxv"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_width="@dimen/_22pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_pngimg1"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_pngimg1"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/frameStack"
+            android:layout_gravity="end"
+            android:layout_height="@dimen/_707pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_343pxh">
+            <FrameLayout android:id="@+id/frameStacktimer"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_707pxv"
+                android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_315pxh">
+                <ImageView android:id="@+id/imageImage21024a"
+                    android:layout_gravity="start"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_image21024a}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image21024a"/>
+                <LinearLayout android:id="@+id/linearColumntimer"
+                    android:layout_gravity="bottom|end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_154pxv"
+                    android:layout_marginEnd="@dimen/_77pxh"
+                    android:layout_marginStart="@dimen/_77pxh"
+                    android:layout_marginTop="@dimen/_154pxv"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnTimer"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_7pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_7pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_timer"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_timer"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnSeeSchedule"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_50pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_7pxv"
+                        android:paddingEnd="@dimen/_28pxh"
+                        android:paddingStart="@dimen/_27pxh"
+                        android:paddingTop="@dimen/_7pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_see_schedule"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_see_schedule"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnBreaks"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_51pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_7pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_7pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_breaks"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_breaks"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnDressMyCat"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_49pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_7pxv"
+                        android:paddingEnd="@dimen/_23pxh"
+                        android:paddingStart="@dimen/_23pxh"
+                        android:paddingTop="@dimen/_7pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_dress_my_cat"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_dress_my_cat"/>
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frameStackscreenshot2024"
+                android:layout_gravity="top|end"
+                android:layout_height="@dimen/_100pxv"
+                android:layout_marginBottom="@dimen/_41pxv"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_41pxv" android:layout_width="@dimen/_122pxh">
+                <ImageView android:id="@+id/imageScreenshot2024"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_100pxh"
+                    android:layout_width="@dimen/_122pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_screenshot2024}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_screenshot2024"/>
+                <TextView android:gravity="top|center"
+                    android:id="@+id/txtHimynameis"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_22pxv"
+                    android:layout_marginEnd="@dimen/_18pxh"
+                    android:layout_marginStart="@dimen/_18pxh"
+                    android:layout_marginTop="@dimen/_22pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{homepageVM.homepageModel.txtHimynameis}"
+                    style="@style/txtKalamregular15" tools:text="@string/msg_hi_my_name_is"/>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

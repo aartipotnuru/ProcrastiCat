@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="breakFifteenVM" type="com.aartipotnurusapplication.app.modules.breakfifteen.data.viewmodel.BreakFifteenVM"/>
+    </data>
+    <LinearLayout android:gravity="end"
+        android:id="@+id/linearBreakFifteen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylebluegray_300_ec">
+        <FrameLayout android:id="@+id/frameStacklineone"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_89pxv"
+            android:layout_marginEnd="@dimen/_1pxh"
+            android:layout_marginStart="@dimen/_1pxh" android:layout_width="@dimen/_409pxh">
+            <View android:background="@color/black_900"
+                android:id="@+id/lineLineOne"
+                android:layout_gravity="bottom|start"
+                android:layout_height="@dimen/_2pxv"
+                android:layout_marginBottom="@dimen/_38pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_38pxv" android:layout_width="@dimen/_360pxh"/>
+            <LinearLayout android:id="@+id/linearRowprocrasticat"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylegray_103">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtProcrastiCat"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_6pxv"
+                    android:layout_marginStart="@dimen/_116pxh"
+                    android:layout_marginTop="@dimen/_45pxv"
+                    android:layout_weight="0.64"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{breakFifteenVM.breakFifteenModel.txtProcrastiCat}"
+                    style="@style/txt" tools:text="@string/lbl_procrasticat"/>
+                <ImageView android:id="@+id/imageImageFive"
+                    android:layout_height="@dimen/_30pxh"
+                    android:layout_marginBottom="@dimen/_14pxv"
+                    android:layout_marginEnd="@dimen/_100pxh"
+                    android:layout_marginStart="@dimen/_2pxh"
+                    android:layout_marginTop="@dimen/_45pxv"
+                    android:layout_width="@dimen/_68pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_image1"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image1"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/frameStackbreakforfifteen"
+            android:layout_height="@dimen/_578pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_1pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_3pxv" android:layout_width="@dimen/_384pxh">
+            <View android:background="@color/white_A700"
+                android:id="@+id/viewBreakforFifteen"
+                android:layout_gravity="bottom|start"
+                android:layout_height="@dimen/_130pxv"
+                android:layout_marginEnd="@dimen/_44pxh"
+                android:layout_marginStart="@dimen/_44pxh"
+                android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_271pxh"/>
+            <ImageView android:id="@+id/imageImageremovebg"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_468pxv"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                cornerRadius="@{@dimen/_41pxh}"
+                imageRes="@{@drawable/img_imageremovebg}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_imageremovebg"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>
